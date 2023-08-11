@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../web/cart.css">
+
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-utensils"></i>  </a>
+    
+        <nav class="navbar">
+            <a href="../web/index.html">home</a>
+            <a href="../web/shopping.html">Shop</a>
+            <a href="../web/cart.html">Cart</a>
+            <a href="../web/about.html">about</a>
+            <a href="../web/blog.html">popular</a>
+            <a href="../web/contact.html">Contact</a>
+            
+           
+        </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+                   <!-- !Primary Navigation -->
+    
+            </header>
+
+    <div class="contain">
+
+        <div class="wrapper">
+
+            <div class="form">
+                <h4>GET IN TOUCH</h4>
+                <h2 class="form-headline">Send us a message</h2>
+                <form id="submit-form" action="../database/contact.php" method="post">
+                    <p>
+                        <input id="name" class="form-input" type="text" placeholder="Your Name*" name="name">
+                        <small class="name-error"></small>
+                    </p>
+                    <p>
+                        <input id="email" class="form-input" type="email" placeholder="Your Email*" name="email">
+                        <small class="name-error"></small>
+                    </p>
+                    <p class="full-width">
+                        <input id="company-name" class="form-input" type="text" placeholder="Company Name*" name="companyName" required>
+                        <small></small>
+                    </p>
+                    <p class="full-width">
+                        <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" name="message" required></textarea>
+                        <small></small>
+                    </p>
+                    <p class="full-width">
+                        <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
+                    </p>
+                    <p class="full-width">
+                        <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                        <button class="reset-btn" onclick="reset()">Reset</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="contacts contact-wrapper">
+
+                <ul>
+                    <li>Have question and need to talk to us? <span class="highlight-text-grey"> Please complete this form
+
+                    </span>and we will get in touch as soon as possible.</li>
+                    <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> royale@gmail.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+254727466679</span></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+
+
+
+    <footer class="footer">
+        <div class="footer_contain">
+            <div class="row_footer">
+                <div class="footer_column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/web/about.html">About us</a></li>
+                        <li><a href="/web/service.html">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="/web/contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="/web/faq.html">FAQ</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="conditions.html">Terms and Conditions</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h4>Follow us</h4>
+                    <div class="social_links">
+                        <a href="#"><i class="bi bi-facebook bi-4x"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
